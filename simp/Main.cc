@@ -114,14 +114,11 @@ int main(int argc, char** argv)
         IntOption    mem_lim("MAIN", "mem-lim","Limit on memory usage in megabytes.\n", INT32_MAX, IntRange(0, INT32_MAX));
  //       BoolOption opt_incremental ("MAIN","incremental", "Use incremental SAT solving",false);
 
-         BoolOption    opt_certified      (_certified, "certified",    "Certified UNSAT using DRUP format", false);
-         StringOption  opt_certified_file      (_certified, "certified-output",    "Certified UNSAT output file", "NULL");
-         BoolOption    opt_vbyte             (_certified, "vbyte",    "Emit proof in variable-byte encoding", false);
-
-        parseOptions(argc, argv, true);
+        BoolOption    opt_certified      (_certified, "certified",    "Certified UNSAT using DRUP format", false);
+        StringOption  opt_certified_file      (_certified, "certified-output",    "Certified UNSAT output file", "NULL");
+        BoolOption    opt_vbyte             (_certified, "vbyte",    "Emit proof in variable-byte encoding", false);
 
         SimpSolver  S;
-        double      initial_time = cpuTime();
 
         S.parsing = 1;
         S.use_simplification = pre;
@@ -182,12 +179,15 @@ int main(int argc, char** argv)
         if (in == NULL)
             printf("ERROR! Could not open file: %s\n", argc == 1 ? "<stdin>" : argv[1]), exit(1);
 
-           FILE* res = (argc >= 3) ? fopen(argv[argc-1], "wb") : NULL;
-        parse_DIMACS(in, S);
+
+
+        std::string clause = "";
+        if(argc == 3)
+            clause = argv[2];
+        parse_DIMACS(in, S, clause);
         gzclose(in);
 
    
-        double parsed_time = cpuTime();
    
         // Change to signal-handlers that will only notify the solver and allow it to terminate
         // voluntarily:
@@ -197,15 +197,8 @@ int main(int argc, char** argv)
         S.parsing = 0;
         if(pre/* && !S.isIncremental()*/) {
 	    S.eliminate(true);
-        double simplified_time = cpuTime();
 
 	}
-        if (!S.okay()){
-            if (S.certifiedUNSAT) fprintf(S.certifiedOutput, "0\n"), fclose(S.certifiedOutput);
-            if (res != NULL) fprintf(res, "0"), fclose(res);
-            printf("0");
-            exit(20);
-        }
 
         if (dimacs){
             S.toDimacs((const char*)dimacs);
@@ -217,27 +210,15 @@ int main(int argc, char** argv)
 
         printf(ret == l_True ? "1" : ret == l_False ? "0" : "2");
 
-        if (res != NULL){
-            if (ret == l_True){
-                printf("SAT\n");
-                for (int i = 0; i < S.nVars(); i++)
-                    if (S.model[i] != l_Undef)
-                        fprintf(res, "%s%s%d", (i==0)?"":" ", (S.model[i]==l_True)?"":"-", i+1);
-                fprintf(res, " 0\n");
-            } else {
-	      if (ret == l_False){
-		fprintf(res, "UNSAT\n");
-	      }
-	    }
-            fclose(res);
-        } else {
+        
+         
 	  if(S.showModel && ret==l_True) {
 	    printf("v ");
 	    for (int i = 0; i < S.nVars(); i++)
                 if (S.model[i] != l_Undef)
 		printf("%s%s%d", (i==0)?"":" ", (S.model[i]==l_True)?"":"-", i+1);
               printf(" 0\n");
-	  }
+	  
 
 
         }
