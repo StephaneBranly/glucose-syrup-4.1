@@ -1,0 +1,190 @@
+/Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/ClausesBuffer.o /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/ClausesBuffer.or /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/ClausesBuffer.od /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/ClausesBuffer.op: \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/ClausesBuffer.cc \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/ClausesBuffer.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Vec.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/IntTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/XAlloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alg.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Map.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Solver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Heap.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/Options.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/ParseUtils.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/BoundedQueue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Constants.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Clone.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverStats.h
+/Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/Main.o /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/Main.or /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/Main.od /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/Main.op: \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/Main.cc \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/System.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/IntTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/ParseUtils.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/Options.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Vec.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/XAlloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Dimacs.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alg.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Map.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../simp/SimpSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Queue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Solver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Heap.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/BoundedQueue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Constants.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Clone.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverStats.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/ParallelSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SharedCompanion.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SolverCompanion.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/ClausesBuffer.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/MultiSolvers.h
+/Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/MultiSolvers.o /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/MultiSolvers.or /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/MultiSolvers.od /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/MultiSolvers.op: \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/MultiSolvers.cc \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/MultiSolvers.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/ParallelSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/IntTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alg.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Vec.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/XAlloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Map.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Solver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Heap.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/Options.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/ParseUtils.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/BoundedQueue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Constants.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Clone.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverStats.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../simp/SimpSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Queue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SharedCompanion.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SolverCompanion.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/ClausesBuffer.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Sort.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/System.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SolverConfiguration.h
+/Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/ParallelSolver.o /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/ParallelSolver.or /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/ParallelSolver.od /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/ParallelSolver.op: \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/ParallelSolver.cc \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/ParallelSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/IntTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alg.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Vec.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/XAlloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Map.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Solver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Heap.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/Options.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/ParseUtils.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/BoundedQueue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Constants.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Clone.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverStats.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../simp/SimpSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Queue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SharedCompanion.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SolverCompanion.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/ClausesBuffer.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Sort.h
+/Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SharedCompanion.o /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SharedCompanion.or /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SharedCompanion.od /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SharedCompanion.op: \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SharedCompanion.cc \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Solver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Heap.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Vec.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/IntTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/XAlloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alg.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/Options.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/ParseUtils.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Map.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/BoundedQueue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Constants.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Clone.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverStats.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/ParallelSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../simp/SimpSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Queue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SharedCompanion.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SolverCompanion.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/ClausesBuffer.h
+/Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SolverCompanion.o /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SolverCompanion.or /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SolverCompanion.od /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SolverCompanion.op: \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SolverCompanion.cc \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SolverCompanion.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Vec.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/IntTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/XAlloc.h
+/Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SolverConfiguration.o /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SolverConfiguration.or /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SolverConfiguration.od /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SolverConfiguration.op: \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/SolverConfiguration.cc \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/MultiSolvers.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/ParallelSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/IntTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alg.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Vec.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/XAlloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Map.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Alloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Solver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Heap.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/Options.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../utils/ParseUtils.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/BoundedQueue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/Constants.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Clone.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../core/SolverStats.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../simp/SimpSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../mtl/Queue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SharedCompanion.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SolverCompanion.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/ClausesBuffer.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/parallel/../parallel/SolverConfiguration.h
+/Users/stephane_branly/Documents/glucose-syrup-4.1/simp/Main.o /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/Main.or /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/Main.od /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/Main.op: /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/Main.cc \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../utils/System.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/IntTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../utils/ParseUtils.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../utils/Options.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Vec.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/XAlloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../core/Dimacs.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../core/SolverTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Alg.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Map.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Alloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../simp/SimpSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Queue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../core/Solver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Heap.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../core/BoundedQueue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../core/Constants.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Clone.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../core/SolverStats.h
+/Users/stephane_branly/Documents/glucose-syrup-4.1/simp/SimpSolver.o /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/SimpSolver.or /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/SimpSolver.od /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/SimpSolver.op: \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/SimpSolver.cc \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Sort.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Vec.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/IntTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/XAlloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../simp/SimpSolver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Queue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../core/Solver.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Heap.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Alg.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../utils/Options.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../utils/ParseUtils.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../core/SolverTypes.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Map.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Alloc.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../core/BoundedQueue.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../core/Constants.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../mtl/Clone.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../core/SolverStats.h \
+  /Users/stephane_branly/Documents/glucose-syrup-4.1/simp/../utils/System.h
