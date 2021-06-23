@@ -1,7 +1,9 @@
 # Glucose
 
 Made by `Gilles Audemard` and `Laurent Simon`
+
 Improved version by `Stephane Branly` to solve a specific problem.
+
 Origine : [https://www.labri.fr/perso/lsimon/glucose/](https://www.labri.fr/perso/lsimon/glucose/)
 
 ## Stdout

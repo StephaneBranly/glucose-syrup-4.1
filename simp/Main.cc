@@ -181,10 +181,12 @@ int main(int argc, char** argv)
 
 
 
-        std::string clause = "";
-        if(argc == 3)
-            clause = argv[2];
-        parse_DIMACS(in, S, clause);
+        
+        int nombre_vars = atoi(argv[2]);
+        int nombre_clauses = atoi(argv[3]);
+        std::string clause = argv[4];
+        
+        parse_DIMACS(in, S, clause, nombre_vars, nombre_clauses);
         gzclose(in);
 
    

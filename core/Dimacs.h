@@ -46,23 +46,16 @@ static void readClause(B& in, Solver& S, vec<Lit>& lits) {
 }
 
 template<class B, class Solver>
-static void parse_DIMACS_main(B& in, Solver& S, std::string clause = "") {
+static void parse_DIMACS_main(B& in, Solver& S, std::string clause, int nombre_vars, int nombre_clauses) {
     vec<Lit> lits;
-    int vars    = 0;
-    int clauses = 0;
+    int vars    = nombre_vars;
+    int clauses = nombre_clauses;
     int cnt     = 0;
   
     for (;;){
         skipWhitespace(in);
         if (*in == EOF) break;
-        else if (*in == 'p'){
-            if (eagerMatch(in, "p cnf")){
-                vars    = parseInt(in);
-                clauses = parseInt(in);
-            }else{
-                printf("PARSE ERROR! Unexpected char: %c\n", *in), exit(3);
-            }
-        } else if (*in == 'c' || *in == 'p')
+        else if (*in == 'c' || *in == 'p')
             skipLine(in);
         else{
             cnt++;
@@ -104,9 +97,9 @@ static void parse_DIMACS_main(B& in, Solver& S, std::string clause = "") {
 // Inserts problem into solver.
 //
 template<class Solver>
-static void parse_DIMACS(gzFile input_stream, Solver& S, std::string clause = "") {
+static void parse_DIMACS(gzFile input_stream, Solver& S, std::string clause, int nombre_vars, int nombre_clauses) {
     StreamBuffer in(input_stream);
-    parse_DIMACS_main(in, S, clause); }
+    parse_DIMACS_main(in, S, clause, nombre_vars, nombre_clauses); }
 
 //=================================================================================================
 }
