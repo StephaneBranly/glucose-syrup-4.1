@@ -1,11 +1,14 @@
 # Glucose
 
-Made by Gilles Audemard and Laurent Simon
-Improved version to solve specific problem.
+Made by `Gilles Audemard` and `Laurent Simon`
+Improved version by `Stephane Branly` to solve a specific problem.
 Origine : [https://www.labri.fr/perso/lsimon/glucose/](https://www.labri.fr/perso/lsimon/glucose/)
 
-Directory overview:
-==================
+## Stdout
+- `0` for `s UNSATISFIABLE`
+- `1` for `s SATISFIABLE`
+
+## Directory overview
 
 mtl/            Minisat Template Library
 core/           A core version of the solver glucose (no main here)
@@ -15,15 +18,13 @@ README
 LICENSE
 Changelog
 
-To build (release version: without assertions, statically linked, etc):
-======================================================================
+## Build
 Like minisat....
 
 cd { simp | parallel }
 make rs
 
-Usage:
-======
+## Usage
 
 in simp directory:      ./glucose --help
 

@@ -22,6 +22,7 @@ OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWA
 #define Glucose_Dimacs_h
 
 #include <stdio.h>
+#include <string>
 
 #include "utils/ParseUtils.h"
 #include "core/SolverTypes.h"
@@ -45,11 +46,12 @@ static void readClause(B& in, Solver& S, vec<Lit>& lits) {
 }
 
 template<class B, class Solver>
-static void parse_DIMACS_main(B& in, Solver& S) {
+static void parse_DIMACS_main(B& in, Solver& S, std::string clause = "") {
     vec<Lit> lits;
     int vars    = 0;
     int clauses = 0;
     int cnt     = 0;
+  
     for (;;){
         skipWhitespace(in);
         if (*in == EOF) break;
@@ -57,9 +59,6 @@ static void parse_DIMACS_main(B& in, Solver& S) {
             if (eagerMatch(in, "p cnf")){
                 vars    = parseInt(in);
                 clauses = parseInt(in);
-                // SATRACE'06 hack
-                // if (clauses > 4000000)
-                //     S.eliminate(true);
             }else{
                 printf("PARSE ERROR! Unexpected char: %c\n", *in), exit(3);
             }
@@ -70,6 +69,32 @@ static void parse_DIMACS_main(B& in, Solver& S) {
             readClause(in, S, lits);
             S.addClause_(lits); }
     }
+    if(clause != "")
+    {
+        cnt++;
+        bool neg = false;
+        int val = 0;
+        int parsed_lit;
+        int var;
+        lits.clear();
+        for (int i = 0; i < clause.length(); i++)
+        {
+            if      (clause[i] == '-') neg = true;
+            else if (clause[i] == '+') neg = false;
+            else if (clause[i] >= '0' && clause[i] <= '9')
+                val = val*10 + (clause[i] - '0');
+            else if (clause[i] == ' ')
+            {
+                parsed_lit = neg ? -val : val;
+                val = 0;
+                var = abs(parsed_lit) - 1;
+                lits.push( (parsed_lit > 0) ? mkLit(var) : ~mkLit(var) );
+            }
+            else if (clause[i] < '0' || clause[i] > '9') fprintf(stderr, "PARSE ERROR! Unexpected char: %c\n", clause[i]), exit(3);
+        }
+        S.addClause_(lits);
+        clauses++;
+    }
     if (vars != S.nVars())
         fprintf(stderr, "WARNING! DIMACS header mismatch: wrong number of variables.\n");
     if (cnt  != clauses)
@@ -79,9 +104,9 @@ static void parse_DIMACS_main(B& in, Solver& S) {
 // Inserts problem into solver.
 //
 template<class Solver>
-static void parse_DIMACS(gzFile input_stream, Solver& S) {
+static void parse_DIMACS(gzFile input_stream, Solver& S, std::string clause = "") {
     StreamBuffer in(input_stream);
-    parse_DIMACS_main(in, S); }
+    parse_DIMACS_main(in, S, clause); }
 
 //=================================================================================================
 }
