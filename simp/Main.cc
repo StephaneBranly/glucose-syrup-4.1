@@ -180,11 +180,12 @@ int main(int argc, char** argv)
             printf("ERROR! Could not open file: %s\n", argc == 1 ? "<stdin>" : argv[1]), exit(1);
 
 
-
         
         int nombre_clauses = atoi(argv[2]);
-        std::string clause = argv[3];
-        
+        std::string clause = "";
+        if(argc == 4)
+            clause = argv[3];
+
         parse_DIMACS(in, S, clause, nombre_clauses);
         gzclose(in);
 
