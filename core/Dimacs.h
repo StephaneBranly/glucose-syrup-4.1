@@ -88,10 +88,6 @@ static void parse_DIMACS_main(B& in, Solver& S, std::string clause, int nombre_v
         S.addClause_(lits);
         clauses++;
     }
-    if (vars != S.nVars())
-        fprintf(stderr, "WARNING! DIMACS header mismatch: wrong number of variables.\n");
-    if (cnt  != clauses)
-        fprintf(stderr, "WARNING! DIMACS header mismatch: wrong number of clauses.\n");
 }
 
 // Inserts problem into solver.
