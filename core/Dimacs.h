@@ -46,9 +46,8 @@ static void readClause(B& in, Solver& S, vec<Lit>& lits) {
 }
 
 template<class B, class Solver>
-static void parse_DIMACS_main(B& in, Solver& S, std::string clause, int nombre_vars, int nombre_clauses) {
+static void parse_DIMACS_main(B& in, Solver& S, std::string clause, int nombre_clauses) {
     vec<Lit> lits;
-    int vars    = nombre_vars;
     int clauses = nombre_clauses;
     int cnt     = 0;
   
@@ -93,9 +92,9 @@ static void parse_DIMACS_main(B& in, Solver& S, std::string clause, int nombre_v
 // Inserts problem into solver.
 //
 template<class Solver>
-static void parse_DIMACS(gzFile input_stream, Solver& S, std::string clause, int nombre_vars, int nombre_clauses) {
+static void parse_DIMACS(gzFile input_stream, Solver& S, std::string clause, int nombre_clauses) {
     StreamBuffer in(input_stream);
-    parse_DIMACS_main(in, S, clause, nombre_vars, nombre_clauses); }
+    parse_DIMACS_main(in, S, clause, nombre_clauses); }
 
 //=================================================================================================
 }

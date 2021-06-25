@@ -182,11 +182,10 @@ int main(int argc, char** argv)
 
 
         
-        int nombre_vars = atoi(argv[2]);
-        int nombre_clauses = atoi(argv[3]);
+        int nombre_clauses = atoi(argv[2]);
         std::string clause = argv[4];
         
-        parse_DIMACS(in, S, clause, nombre_vars, nombre_clauses);
+        parse_DIMACS(in, S, clause, nombre_clauses);
         gzclose(in);
 
    
